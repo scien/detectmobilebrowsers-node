@@ -1,6 +1,6 @@
 {
   "name": "detectmobilebrowsers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mobile browser detection based on user-agent",
   "author": "Bryant Williams <b.n.williams@gmail.com>",
   "keywords": [
