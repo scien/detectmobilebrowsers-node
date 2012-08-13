@@ -2,10 +2,6 @@
 
 Detects if the request came from a mobile browser
 
-## Credit
-
-Regex was put together by [Chad Smith](http://twitter.com/chadsmith) of http://detectmobilebrowsers.com
-
 ## Usage
 ```
 express = require 'express'
@@ -19,6 +15,11 @@ app.get '/', (req, res) ->
   res.json {is_mobile: req.is_mobile}
 app.listen 3000
 ```
+
+## Credit
+
+Regex was put together by [Chad Smith](http://twitter.com/chadsmith) of http://detectmobilebrowsers.com
+
 
 ## LICENSE
 ```
