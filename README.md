@@ -10,7 +10,7 @@ mobile  = require 'detectmobilebrowsers'
 app = express()
 app.configure () ->
   app.use mobile.redirect 'http://m.domain.com'
-  app.user mobile.is_mobile()
+  app.use mobile.is_mobile()
 app.get '/', (req, res) ->
   res.json {is_mobile: req.is_mobile}
 app.listen 3000
