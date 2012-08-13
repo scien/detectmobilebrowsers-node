@@ -1,0 +1,25 @@
+{
+  "name": "detectmobilebrowser-node",
+  "version": "0.1.0",
+  "description": "Mobile browser detection based on user-agent",
+  "author": "Bryant Williams <b.n.williams@gmail.com>",
+  "keywords": ["detectmobilebrowser", "node", "mobile", "detection"],
+  "scripts": {
+    "postinstall": "cake build",
+    "preinstall": "cake clean",
+    "pretest": "npm install --dev",
+    "test": "cake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/scien/detectmobilebrowsers-node.git"
+  },
+  "devDependencies": {
+    "coffee-script":  "1.3.x",
+    "express":        "3.0.x",
+    "mocha":          "1.3.x",
+    "request":        "2.10.x",
+    "should":         "1.1.x"
+  },
+  "main": "./lib/detectmobilebrowsers"
+}
