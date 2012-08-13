@@ -4,9 +4,9 @@ Detects if the request came from a mobile browser
 
 ## Credit
 
-Regex was put together by http://detectmobilebrowsers.com
+Regex was put together by [Chad Smith](http://twitter.com/chadsmith) of http://detectmobilebrowsers.com
 
-## Synopsis
+## Usage
 ```
 express = require 'express'
 mobile  = require 'detectmobilebrowsers'
