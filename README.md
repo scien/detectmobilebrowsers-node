@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/scien/detectmobilebrowsers-node.png)](http://travis-ci.org/scien/detectmobilebrowsers-node)
 # Mobile Redirection for Node.js and Express
 
 Detects if the request came from a mobile browser
