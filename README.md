@@ -27,6 +27,7 @@ app.listen(3000);
 ## Credit
 
 Regex was put together by [Chad Smith](http://twitter.com/chadsmith) of http://detectmobilebrowsers.com
+Further regexes based on [this Gist](https://gist.github.com/dalethedeveloper/1503252)
 
 
 ## LICENSE
