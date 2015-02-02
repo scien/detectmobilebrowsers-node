@@ -11,10 +11,14 @@ var mobile  = require('detectmobilebrowsers');
 var app = express();
 
 app.use(mobile.is_mobile());
+app.use(mobile.is_tablet());
 app.use(mobile.redirect('http://m.domain.com'));
 
 app.get('/', function (req, res) {
-  res.json({is_mobile: req.is_mobile});
+  res.json({
+    is_mobile: req.is_mobile,
+    is_tablet: req.is_tablet
+  });
 }
 
 app.listen(3000);
