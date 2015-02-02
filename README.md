@@ -15,7 +15,7 @@ app.use(mobile.redirect('http://m.domain.com'));
 
 app.get('/', function (req, res) {
   res.json({is_mobile: req.is_mobile});
-}
+});
 
 app.listen(3000);
 ```
