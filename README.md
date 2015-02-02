@@ -1,19 +1,23 @@
 # Mobile Redirection for Node.js and Express
 
-Detects if the request came from a mobile browser
+Express middleware to detect if the request came from a mobile browser.
 
 ## Usage
-```
-express = require 'express'
-mobile  = require 'detectmobilebrowsers'
 
-app = express()
-app.configure () ->
-  app.use mobile.redirect 'http://m.domain.com'
-  app.use mobile.is_mobile()
-app.get '/', (req, res) ->
-  res.json {is_mobile: req.is_mobile}
-app.listen 3000
+```javascript
+var express = require('express');
+var mobile  = require('detectmobilebrowsers');
+
+var app = express();
+
+app.use(mobile.is_mobile());
+app.use(mobile.redirect('http://m.domain.com'));
+
+app.get('/', function (req, res) {
+  res.json({is_mobile: req.is_mobile});
+}
+
+app.listen(3000);
 ```
 
 ## Credit
