@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
     is_mobile: req.is_mobile,
     is_tablet: req.is_tablet
   });
-}
+});
 
 app.listen(3000);
 ```
