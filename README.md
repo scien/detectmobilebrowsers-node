@@ -11,10 +11,14 @@ var mobile  = require('detectmobilebrowsers');
 var app = express();
 
 app.use(mobile.is_mobile());
+app.use(mobile.is_tablet());
 app.use(mobile.redirect('http://m.domain.com'));
 
 app.get('/', function (req, res) {
-  res.json({is_mobile: req.is_mobile});
+  res.json({
+    is_mobile: req.is_mobile,
+    is_tablet: req.is_tablet
+  });
 });
 
 app.listen(3000);
@@ -23,6 +27,7 @@ app.listen(3000);
 ## Credit
 
 Regex was put together by [Chad Smith](http://twitter.com/chadsmith) of http://detectmobilebrowsers.com
+Further regexes based on [this Gist](https://gist.github.com/dalethedeveloper/1503252)
 
 
 ## LICENSE
