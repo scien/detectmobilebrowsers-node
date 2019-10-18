@@ -26,7 +26,7 @@
     "coffee-script":  "1.3.x",
     "express":        "3.0.x",
     "mocha":          "1.3.x",
-    "request":        "2.10.x",
+    "request":        "2.88.x",
     "should":         "1.1.x"
   },
   "main": "./lib/detectmobilebrowsers.js"
